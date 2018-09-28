@@ -1,0 +1,15 @@
+Strona glowna : 
+TYTUL 
+KURSY
+ZDJECIA -> SLIDER	
+
+KONTAKT
+Dane kontaktowe
+
+Lokalizacja -> lokalizacja i mapy google
+
+O NAS 
+Ten ich tekst
+filmik
+
+??

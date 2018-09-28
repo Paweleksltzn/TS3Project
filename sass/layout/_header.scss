@@ -1,0 +1,46 @@
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    font-size:1.5rem;
+    
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    //display: none;
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+#toggle:checked + .menu {
+    display: block;
+}
