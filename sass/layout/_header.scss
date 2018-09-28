@@ -3,12 +3,14 @@
     text-align: right;
     height: 70px;
     line-height: 70px;
+    height: 100vh;
 }
 .menu {
     margin: 0 30px 0 0;
     text-align: center;
     width: 100%;
     display: none;
+    z-index: 1000;
 }
 .menu a {
     clear: right;
@@ -19,13 +21,11 @@
     border-bottom: 1px solid #EAEAEB;
     margin: 0;
     font-size:1.5rem;
-    
+    color:white;
+    background-color: $nav-background;
+    font-weight: 700;
+    z-index: 1000;
 }
-
-span {
-    color: #54D17A;
-}
-
 label {
     margin: 0 40px 0 0;
     font-size: 26px;
@@ -35,6 +35,8 @@ label {
     cursor: pointer;
     width: 26px;
     float: right;
+    position: relative;
+    z-index: 1001;
 }
 #toggle {
     display: none;
@@ -43,4 +45,5 @@ label {
 
 #toggle:checked + .menu {
     display: block;
+    position: relative;
 }

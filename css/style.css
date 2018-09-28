@@ -20,13 +20,15 @@ body {
   border-bottom: 1px solid #EAEAEB;
   text-align: right;
   height: 70px;
-  line-height: 70px; }
+  line-height: 70px;
+  height: 100vh; }
 
 .menu {
   margin: 0 30px 0 0;
   text-align: center;
   width: 100%;
-  display: none; }
+  display: none;
+  z-index: 1000; }
 
 .menu a {
   clear: right;
@@ -36,10 +38,11 @@ body {
   display: block;
   border-bottom: 1px solid #EAEAEB;
   margin: 0;
-  font-size: 1.5rem; }
-
-span {
-  color: #54D17A; }
+  font-size: 1.5rem;
+  color: white;
+  background-color: #000;
+  font-weight: 700;
+  z-index: 1000; }
 
 label {
   margin: 0 40px 0 0;
@@ -48,10 +51,47 @@ label {
   display: block;
   cursor: pointer;
   width: 26px;
-  float: right; }
+  float: right;
+  position: relative;
+  z-index: 1001; }
 
 #toggle {
   display: none; }
 
 #toggle:checked + .menu {
-  display: block; }
+  display: block;
+  position: relative; }
+
+.mBot {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1; }
+  .mBot__banner {
+    color: #28931a;
+    margin-bottom: 10vh; }
+  .mBot__banner--lower {
+    font-size: 1.5rem;
+    color: #73e863; }
+
+.mBotFunction {
+  margin: 0 10%; }
+  .mBotFunction--header {
+    text-align: center;
+    font-size: 1.5rem; }
+  .mBotFunction--description {
+    font-size: 1.5rem;
+    display: flex;
+    font-size: bold;
+    flex-direction: column; }
+    .mBotFunction--description-single {
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+      background-image: linear-gradient(#e66465, #9198e5);
+      font-size: 1.25rem;
+      height: 40vh;
+      color: #0e0f0e; }
