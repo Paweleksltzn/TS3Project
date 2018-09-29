@@ -1,0 +1,38 @@
+
+@keyframes firstTitleCommingOut {
+    0% {
+        transform: skewX(10deg);
+    }
+    40% {
+        transform: skewX(-10deg);
+        color: rgba(red,.7);
+    }
+    70% {
+        color: rgba(#f22b60,.7);
+        transform: skewX(25deg);
+    }
+    85%{
+        color: rgba(#ed8721,.7);
+        transform: skewX(45deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+@keyframes secondTitleCommingOut {
+    0% {
+        transform: rotate(170deg);
+    }
+    25% {
+        transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    85% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

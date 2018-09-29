@@ -7,34 +7,94 @@
     text-align: center;
     text-transform: uppercase;
     z-index:1;
+    font-weight: bold;
     &__banner {
+        font-size: 2rem;
         color:$mbotHeaderPrime;
         margin-bottom: 10vh;
+        animation: 3s firstTitleCommingOut linear;
     }
     &__banner--lower {
         font-size:1.5rem;
         color:$mbotHeaderSecond;
+        animation: 4s secondTitleCommingOut linear ;
     }
 
 }
 .mBotFunction {
-    margin:0 10%;
+    
+    background-color: rgba(#eeffad,.5);
     &--header {
         text-align: center;
         font-size: 1.5rem;
+        margin:0 10%;
+        padding:5rem 0;
+
     }
     &--description {
         font-size: 1.5rem;
         display: flex;
-        font-size: bold;
         flex-direction: column;
         &-single {
+            
+            margin:0 10%;
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-            background-image:linear-gradient(#e66465, #9198e5);
-            font-size:1.25rem;
             height: 40vh;
+            font-size:1.25rem;
             color:#0e0f0e;
+            margin-bottom: 5rem;
+            padding:1rem;
         }
+        &-1 {
+            background-image:linear-gradient(#e66465, #9198e5);
+            height:22rem;
+        }
+        &-2 {
+            background-image:linear-gradient(#a3ffa6, #42fff5);
+            max-height: 18rem;
+        }
+        &-3 {
+            background-image:linear-gradient(#fcabdc, #f4af24);
+            height: 17rem;
+        }
+        &-4 {
+            background-image:linear-gradient(#f25c5c, #f4f3e1);
+            height: 13rem;
+        }
+        &-5 {
+            background-image:linear-gradient(#60a504, #9198e5);
+            height: 18rem;
+        }
+        &-6 {
+            background-image:linear-gradient(#efb3ea, #adff96);
+            height: 16rem;
+        }
+        &-7 {
+            background-image:linear-gradient(#ffc10a, #6063ff);
+            height: 14rem;
+        }
+        &-8 {
+            background-image:linear-gradient(#e66465, #c2ce40);
+            height: 12rem;
+        }
+        &-9 {
+            background-image:linear-gradient(#e66465, #9198e5);
+            height: 10rem;
+        }
+        &-10 {
+            background-image:linear-gradient(#e66465, #9198e5);
+            height: 10rem;
+            
+        }
+    }
+}
+.prizes {
+    background-color: rgba(#b9ff91,.3);
+    &__title {
+        text-align: center;
+        font-size:1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 }

@@ -4,8 +4,11 @@
     height: 70px;
     line-height: 70px;
     height: 100vh;
+    background-image:linear-gradient(rgba(#f99c39,.2),rgba(#ef4c23,.2)),url("../img/mBotPattern.jpeg");
+    background-size: cover;
 }
 .menu {
+    opacity: 1;
     margin: 0 30px 0 0;
     text-align: center;
     width: 100%;
@@ -25,18 +28,24 @@
     background-color: $nav-background;
     font-weight: 700;
     z-index: 1000;
+    transition: all .7s;
+    &:hover {
+        background-color: #d9ffc4;
+        color:black;
+    }
 }
 label {
     margin: 0 40px 0 0;
-    font-size: 26px;
+    font-size: 4rem;
     line-height: 70px;
     //display: none;
     display: block;
     cursor: pointer;
-    width: 26px;
+    width: 4rem;
     float: right;
     position: relative;
     z-index: 1001;
+    color: $mbotHeaderSecond;
 }
 #toggle {
     display: none;
