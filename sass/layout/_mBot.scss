@@ -35,16 +35,29 @@
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
+        @include respond(tab-land) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+        }
         &-single {
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             margin:0 10%;
+            padding-bottom: 2rem;
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
             height: 40vh;
             font-size:1.25rem;
             color:#0e0f0e;
             margin-bottom: 5rem;
-            padding:1rem;
+            @include respond(tab-land) {
+                width:34vw;
+                margin:3% 5%;
+            }
         }
         &-1 {
             background-image:linear-gradient(#e66465, #9198e5);

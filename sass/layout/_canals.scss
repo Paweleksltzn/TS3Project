@@ -1,0 +1,38 @@
+.canals {
+    position: relative;
+    margin-top:10rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size:2rem;
+            display: block;
+            color:#28000b;
+            animation: 2s canalsFirstTitle linear;
+        }
+        h3 {
+            font-size: 1.3rem;
+            transform: translateX(1000%);
+            color:#7c0829;
+            animation: 2s canalsSecondTitle linear 1s;
+            animation-fill-mode: forwards;  
+        }
+        h4 {
+            font-size:1.1rem;
+            color:#8c3f55;
+            margin-bottom: 3rem;
+            transform: translateX(-1000%);
+            animation: 2s canalsThirdTitle linear 2s;
+            animation-fill-mode: forwards;  
+        }
+    }
+    table {
+        opacity: 0;
+        animation: 2s canalsTable linear 3s;
+        animation-fill-mode: forwards;  
+    }
+}

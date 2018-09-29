@@ -1,0 +1,20 @@
+.AAL {
+    padding-bottom: 10rem;
+    position: relative;
+    margin-top:15rem;
+    @include respond(tab-land) {
+        margin-top:5rem;
+    }
+    &__header {
+        color:rgba(#ff7026,.7);
+        text-align: center;
+        margin:1.5rem;
+        font-size:2rem;
+    }
+    &__info {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        
+    }
+}
